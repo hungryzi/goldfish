@@ -34,6 +34,16 @@ describe CardsController do
     {}
   end
 
+  describe "GET random" do
+    let(:request) { get :random }
+    it "should shows a random card" do
+      card = mock(:card)
+      Card.should_receive(:random).and_return card
+      request
+      assigns(:card).should == card
+    end
+  end
+
   describe "GET index" do
     it "assigns all cards as @cards" do
       card = Card.create! valid_attributes

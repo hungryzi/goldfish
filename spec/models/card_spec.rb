@@ -1,5 +1,11 @@
 require 'spec_helper'
 
 describe Card do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe ".random" do
+    subject { Card.random }
+    it "should calls sample" do
+      Card.should_receive(:all).and_return [1]
+      subject.should == 1
+    end
+  end
 end

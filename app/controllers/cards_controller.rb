@@ -1,4 +1,9 @@
 class CardsController < ApplicationController
+
+  def random
+    @card = Card.random
+  end
+
   # GET /cards
   # GET /cards.json
   def index
