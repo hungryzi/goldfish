@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Side a:</b>
+  <%= @card.side_a %>
+</p>
+
+<p>
+  <b>Side b:</b>
+  <%= @card.side_b %>
+</p>
+
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>
