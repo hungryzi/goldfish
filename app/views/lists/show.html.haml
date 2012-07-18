@@ -1,0 +1,19 @@
+%p#notice= notice
+
+%table.table.table-bordered.table-striped
+  %thead
+    %tr
+      %th Side A
+      %th Side B
+      %th Corrects / Views
+
+  %tbody
+    - @list.cards.each do |card|
+      %tr
+        %td= card.side_a
+        %td= card.side_b
+        %td= '78%'
+
+= link_to 'Edit', edit_list_path(@list)
+\|
+= link_to 'Back', lists_path

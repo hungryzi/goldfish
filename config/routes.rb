@@ -1,5 +1,7 @@
 Goldfish::Application.routes.draw do
 
+  resources :lists
+
   resources :cards do
     collection do
       get :random
