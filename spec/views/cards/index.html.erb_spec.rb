@@ -21,8 +21,4 @@ describe "cards/index" do
     assert_select "tr>td", :text => "Cat".to_s, :count => 2
   end
 
-  it "has 'Random' link" do
-    render
-    rendered.should match(/Random/)
-  end
 end
