@@ -1,0 +1,11 @@
+.links
+  = link_to 'Next', random_cards_path, class: 'next'
+
+.card
+  .side.left
+    %span= @card.side_a
+  .side.right
+    %span= @card.side_b
+
+.links
+  = link_to 'Next', random_cards_path, class: 'next'

@@ -1,0 +1,22 @@
+%h1 Your cards
+
+%table.table.table-bordered.table-striped
+  %thead
+    %tr
+      %th Side A
+      %th Side B
+      %th
+
+  %tbody
+    - @cards.each do |card|
+      %tr
+        %td= card.side_a
+        %td= card.side_b
+        %td
+          = link_to 'Show', card
+          = link_to 'Edit', edit_card_path(card)
+
+  %tfoot
+    %tr
+      %td{ colspan: 3 }
+        = link_to 'New Card', new_card_path

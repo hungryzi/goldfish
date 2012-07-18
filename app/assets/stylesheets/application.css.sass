@@ -1,0 +1,44 @@
+// = require_self
+// = require_tree .
+
+@import 'lib/constants'
+
+body
+  font-size: $normal
+
+section.main
+  padding: 14px
+  background: $grey-background
+
+.card
+  width: 318px
+  margin: 0 auto
+
+  .side
+    width: 150px
+    height: 150px
+    float: left
+    border: $grey-border
+    text-align: center
+
+    span
+      font-size: $big
+      display: inline-block
+      vertical-align: middle
+
+    &.left
+      margin-right: 14px
+
+a.next
+  font-size: $great
+
+.links
+  line-height: 38px
+  text-align: center
+  clear: both
+
+form
+  .field
+    width: 45%
+    float: left
+    margin-right: 14px
